@@ -1,0 +1,6 @@
+# Documentation: https://roots.io/trellis/docs/mail/
+mail_smtp_server: smtp.zoho.com:587
+mail_admin: wordpress@friendlystorewyo.com
+mail_hostname: friendlystorewyo.com
+mail_user: wordpress@friendlystorewyo.com
+mail_password: "{{ vault_mail_password }}" # Define this variable in group_vars/all/vault.yml
