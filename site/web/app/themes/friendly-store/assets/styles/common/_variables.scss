@@ -1,0 +1,33 @@
+// Glyphicons font path
+$icon-font-path:        "../fonts/";
+
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors
+$brand-primary:         #732306;
+
+$brand-border-color:		#F5DBC4;
+
+
+
+// Mixins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin image-overlary($opacity) {
+	-webkit-box-shadow: inset 0 1000px 0 0 rgba(0,0,0,$opacity);
+					box-shadow: inset 0 1000px 0 0 rgba(0,0,0,$opacity);
+}
+
+@mixin background-cover() {
+	background-size: cover;
+	background-position: center center;	
+	background-repeat: no-repeat;
+}

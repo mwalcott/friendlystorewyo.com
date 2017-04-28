@@ -1,0 +1,192 @@
+.jumbotron {
+	margin-bottom: 0px;
+	color: #fff;
+	padding-top: 20%;
+	padding-bottom: 20%;
+	min-height: 350px;
+	text-transform: uppercase;
+	@include background-cover();
+	@include image-overlary(.6);
+
+	@media (min-width: $screen-sm-min) {
+		min-height: 70vh;
+		padding-top: 15%;
+		padding-bottom: 15%;
+	}
+
+					
+	.above-banner-title {
+		font-size: .8em;
+		
+		@media (min-width: $screen-sm-min) {
+			font-size: 1.2em;
+		}
+		
+	}
+	
+	h2 {
+		margin: 5px 0;
+		padding: 20px 0 15px;
+		border-top: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		line-height: 1em;
+		font-size: 1.8em;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: 3em;
+		}
+
+		@media (min-width: $screen-md-min) {
+			font-size: 4em;
+		}
+		
+		@media (min-width: $screen-lg-min) {
+			font-size: 4.8em;
+		}
+
+	}
+	
+	cite {
+		font-size: .8em;
+
+		@media (min-width: $screen-sm-min) {
+			font-size: 1.2em;
+		}
+
+	}
+	
+	ul.services {
+		li {
+			
+			display: inline-block;
+			padding: 0 20px 0 15px;
+			border-right: 1px solid $brand-border-color;
+			
+			&:last-child {
+				border-right: none;
+			}
+			
+			a {
+				color: #fff;
+			}
+			
+		}
+	}
+	
+}
+
+body.home {
+	header.banner {
+
+		@media (min-width: $screen-sm-min) {
+			visibility: hidden;
+			height: 0px;
+		}
+
+
+		a.brand {
+			
+			
+			@media (min-width: $screen-sm-min) {
+				display: none;
+			}
+			
+		}
+
+		nav.nav-primary {
+			float: none;
+			text-align: center;
+			li {
+				float: none;
+				display: inline-block;
+			}
+			
+		}
+
+		
+		&.affix {
+
+			@media (min-width: $screen-sm-min) {
+				visibility: visible;
+				height: auto;
+			}
+
+			a.brand {
+
+				@media (min-width: $screen-sm-min) {
+					display: block;
+				}
+
+			}
+			
+			nav.nav-primary {
+				float: right;
+				li {
+					display: block;
+					float: left;
+				}
+			}
+			
+		}
+		
+	}
+	
+	
+}
+
+header.banner {
+	
+	background: rgb(255,248,242);
+	background: rgba(255,248,242,.9);
+	
+	position: absolute;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	text-transform: uppercase;
+	border-bottom: 1px solid $brand-border-color;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	a.brand {
+		display: block;
+		text-align: center;
+		font-size: 1.3em;
+		color: #333;
+		
+		@media (min-width: $screen-sm-min) {
+			float: left;
+		}
+
+	}
+
+/*
+	span {
+		font-size: 1.3em;
+	}
+*/
+		
+	&.affix {
+		position: fixed;
+		top: 0;
+		z-index: 20;
+		left: 0;
+		right: 0;
+	}
+	
+}
+
+nav.nav-primary {
+	float: right;
+	li {
+		float: left;
+		a {
+			padding: 2px 15px;
+			&:hover {
+				background: transparent;
+			}
+		}
+		
+	}
+	
+}
+
